@@ -1,0 +1,28 @@
+Exception handling-2Assignment Questions 
+Assignment 
+Q1. Explain why we have to use the Exception class while creating a Custom Exception. Note: Here Exception class refers to the base class for all the exceptions. 
+When creating a custom exception in Python, it is recommended to inherit from the Exception class, which serves as the base class for all built-in exceptions. There are a few reasons why using the Exception class as the base class is beneficial:
+Consistency
+Built-in Features
+Q2. Write a python program to print Python Exception Hierarchy. 
+Q3. What errors are defined in the ArithmeticError class? Explain any two with an example. 
+n Python, the ArithmeticError class is the base class for all errors related to arithmetic operations.
+ZeroDivisionError: This error occurs when an operation attempts to divide a number by zero. It represents an invalid mathematical operation where the divisor (the number being divided by) is zero. Let's see an example:
+OverflowError: This error occurs when the result of an arithmetic operation is too large to be represented within the available memory or numeric range of a data type. It happens when the calculated value exceeds the maximum or minimum value that can be stored. 
+
+Q4. Why LookupError class is used? Explain with an example KeyError and IndexError. 
+The LookupError class is the base class for all errors related to lookup operations, such as searching for a key in a dictionary or accessing elements in a sequence. 
+KeyError: This error occurs when a specified key is not found in a dictionary. It is raised when you try to access a dictionary element using a key that does not exist.
+IndexError: This error occurs when an index is out of range in a sequence, such as a list or a string. It is raised when you try to access an element using an index that is beyond the valid range of indices for the sequence.
+
+Q5. Explain ImportError. What is ModuleNotFoundError? 
+ImportError is an error that occurs when importing a module or a specific object from a module fails. It is a base class for all import-related exceptions in Python. It can be raised in various situations, such as when the module or object does not exist, there are issues with the module's dependencies, or there are problems with the import statement itself.
+On the other hand, ModuleNotFoundError is a subclass of ImportError and is specifically raised when a module is not found during the import process. It was introduced in Python 3.6 as a more specific exception for cases where the interpreter cannot locate the requested module.
+
+Q6. List down some best practices for exception handling in python.  
+Specific Exception Handling: It's generally recommended to catch specific exceptions rather than using a broad except statement. This allows for targeted handling of specific error scenarios 
+Use Multiple Except Clauses: When handling different types of exceptions, use multiple except clauses instead of a single clause for all exceptions
+Properly Handle Exceptions: Ensure that exceptions are handled appr
+Use Finally Block for Cleanupopriately, either by gracefully recovering from the error or raising an informative error message
+eep Exception Messages Clear and Informative: When raising exceptions or logging error messages, ensure that the messages are clear, concise, and provide enough information to understand the cause of the error.
+Note: Create your assignment in Jupyter notebook and upload it to GitHub & share that GitHub repository   link through your dashboard. Make sure the repository is public. 
